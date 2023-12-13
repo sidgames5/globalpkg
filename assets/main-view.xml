@@ -1,0 +1,15 @@
+<vbox style="padding: 5px;">
+    <style>
+    </style>
+    <vbox horizontalAlign="center">
+        <label text="Loading" id="name" />
+        <label text="Loading" id="version" />
+        <label text="Loading" id="status" />
+        <hbox>
+            <button text="Cancel" id="cancel" />
+            <button text="Install" id="install" />
+        </hbox>
+    </vbox>
+
+
+</vbox>
