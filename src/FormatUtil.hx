@@ -1,3 +1,4 @@
+import haxe.io.Path;
 import sys.io.File;
 
 using StringTools;
@@ -9,6 +10,11 @@ enum FormatType {
 
 class FormatUtil {
 	public static function detectFormat(file:String):FormatType {
+		final ext = Path.extension(file);
+		switch (ext) {
+			case ".pkg.tar.zst":
+				return ALPM;
+		}
 		return OTHER;
 	}
 
